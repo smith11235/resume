@@ -1,0 +1,46 @@
+name    : Gregory Wilbur
+email   : gwilbur@gmail.com
+website : http://wil.bz/
+phone   : 9782694851
+address : |
+          200 Henry St
+          Apt 1603
+          Stamford, CT 06902
+
+education :
+  - school     : University of Rochester
+    location   : Rochester, NY
+    start_time : January 2007
+    end_time   : May 2010
+    degrees :
+      - type    : Bachelor of Science
+        subject : Computer Science
+      - type    : Bachelor of Science
+        subject : Mathematics
+
+experience :
+  - title      : Software Engineer
+    company    : FactSet Research Systems, Inc.
+    location   : Norwalk, CT
+    start_time : July 2010
+    end_time   : Present
+    description :
+      - Developed and maintained several systems for processing raw financial data and loading them into databases.
+      - Maintenance duties included responding to pages outside of work hours
+
+  - title      : Research Assistant
+    company    : University of Rochester Department of Computer Science
+    location   : Rochester, NY
+    start_time : June 2009
+    end_time   : May 2010
+    description :
+      - Developed and studied a parallel discrete event simulator using the Rochester Software Transactional Memory system.
+
+  - title      : Assistant Unix System Administrator
+    company    : Tufts University
+    location   : Medford, MA
+    start_time : July 2008
+    end_time   : August 2008
+    description :
+      - Installed and maintained Unix servers and desktops for use by multiple departments on campus.
+      - Wrote documentation on the installation and use of several applications including Erlang, Linux, VMware, and GNUpg
