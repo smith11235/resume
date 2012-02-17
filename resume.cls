@@ -57,19 +57,19 @@
 
 \newcommand{\@authorname}{}
 \newcommand{\@email}{}
+\newcommand{\@website}{}
 \newcommand{\@phone}{}
-\newcommand{\@streetaddressone}{}
-\newcommand{\@citystatezipone}{}
-\newcommand{\@streetaddresstwo}{}
-\newcommand{\@citystateziptwo}{}
+\newcommand{\@streetaddress}{}
+\newcommand{\@apartmentnum}{}
+\newcommand{\@citystatezip}{}
 
 \renewcommand{\author}[1]{\renewcommand{\@authorname}{#1}}
 \newcommand{\email}[1]{\renewcommand{\@email}{#1}}
+\newcommand{\website}[1]{\renewcommand{\@website}{#1}}
 \newcommand{\phone}[1]{\renewcommand{\@phone}{#1}}
-\newcommand{\streetaddressone}[1]{\renewcommand{\@streetaddressone}{#1}}
-\newcommand{\citystatezipone}[1]{\renewcommand{\@citystatezipone}{#1}}
-\newcommand{\streetaddresstwo}[1]{\renewcommand{\@streetaddresstwo}{#1}}
-\newcommand{\citystateziptwo}[1]{\renewcommand{\@citystateziptwo}{#1}}
+\newcommand{\streetaddress}[1]{\renewcommand{\@streetaddress}{#1}}
+\newcommand{\apartmentnum}[1]{\renewcommand{\@apartmentnum}{#1}}
+\newcommand{\citystatezip}[1]{\renewcommand{\@citystatezip}{#1}}
 
 \newcommand{\stextbullet}{\hspace{1pt} \textbullet \hspace{2pt}}
 
@@ -85,8 +85,8 @@
 	\vspace{-3pt}
 	\begin{small}\begin{center}
 	\par\nointerlineskip\noindent
-	University of Rochester\stextbullet \@streetaddressone \stextbullet \@citystatezipone \stextbullet \@phone \par
-	\@streetaddresstwo \stextbullet \@citystateziptwo \stextbullet \@email \par
+        \@email \stextbullet \@website \par
+	\@streetaddress \stextbullet \@apartmentnum \stextbullet \@citystatezip \par
 	\par\nointerlineskip\noindent
 	\end{center}\end{small}
 	\vspace{-6pt}
