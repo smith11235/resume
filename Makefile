@@ -6,4 +6,4 @@ resume.pdf : resume.tex
 	pdflatex $<
 
 clean :
-	rm -f resume.log resume.aux resume.pdf
+	rm -f resume.log resume.aux resume.pdf resume.cls resume.out
