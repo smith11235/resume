@@ -1,87 +1,47 @@
-\documentclass[letterpaper]{resume}
-\usepackage{paralist}
-
-\author{Gregory Wilbur}
-    
+\documentclass[10pt,letterpaper]{moderncv}
+\moderncvtheme[blue,roman]{classic}
+\firstname{Greg}
+\familyname{Wilbur}
+\address{114 Strawberry Hill Ave. Apt. 204}{Stamford, CT  06902}
+\mobile{(978) 269-4851}
 \email{gwilbur@gmail.com}
-\website{http://wil.bz/}
-\phone{978-269-4851}
 
-\streetaddress{200 Henry St.}
-\apartmentnum{Apt. 1603}
-\citystatezip{Stamford, CT  06902}
+\def\cpp{
+C\raise.40ex\hbox{\tiny{++}}
+\spacefactor1000 }
 
 \begin{document}
 \maketitle
 
-\section{Skills}
-\vspace{\secskip}
-
-\begin{compactitem}
-	\item \textbf{Languages:} C, C++, Java, Ruby, Python, Erlang, Lua, Scheme/Lisp, Unix Shell Scripting, \LaTeX, x86 Assembly. \par
-\end{compactitem}
-
 \section{Experience}
+\cventry{2010-2013}{Software Engineer}
+        {Factset Research Systems, Inc.}{Norwalk, CT}{}
+        {Developed cross-platform systems in various languages including Ruby, \cpp, and Perl for processing raw fundamentals financial data and performing common calculations in order to optimize fetch speed; Maintained client-facing update systems that constantly ran in multiple instances all day, every day}
 
-\affiliation
-{Software Engineer}
-{FactSet Research Systems, Inc.}
-{July 2010-Present}
-{Norwalk, CT}
+\cventry{2009-2010}{Research Assistant}
+        {University of Rochester}{Rochester, NY}{}
+        {Studied the merits of applying transactional database theory to shared memory in a parallel application; Implemented in \cpp a parallel discrete event simulator utilizing the experimental Rochester Software Transactional Memory system}
 
-\begin{compactitem}
-	\item Developed and maintained several systems for processing raw financial data and loading them into databases. \par
-	\item Maintenance duties included responding to pages outside of work hours \par
-\end{compactitem}
+\cventry{Summer 2008}{Assistant Unix System Administrator}
+        {Tufts University}{Medford, MA}{}
+        {Installed and maintained Unix desktops, servers, and virtual machines for use by multiple departments; Wrote documentation on installation and use of numerous applications, languanges and operating systems, including Erlang, Linux, VMware, and GNUpg}
 
-\affiliation
-{Research Assistant}
-{University of Rochester Department of Computer Science}
-{June 2009-May 2010}
-{Rochester, NY}
+\cventry{Summer 2007}{Research Assistant}
+        {Tufts University}{Medford, MA}{}
+        {Worked with the designers of the MECA (Microscopy, Electrochemistry and Conductivity Analyzer) module for NASA's Pheonix mission to Mars in search of signs of past or potential habitability; Developed software in LabVIEW controlling the atmosphere and temperature in chamber that simulated conditions on the surface of Mars}
 
-\begin{compactitem}
-	\item Developed and studied a parallel discrete event simulator on top of the Rochester Software Transactional Memory system. \par
-\end{compactitem}
+\section{Education and Courses}
+\cventry{2006-2010}{Bachelors of Science in Computer Science and Mathematics}
+        {University of Rochester}{Rochester, NY}{}{}
+\cvline{Fall 2009}{\textbf{Computer Networking:} Wrote implementations of various networking protocols in C, including basic HTTP proxy server, distance vector routing protocol, and Gnutella-like peer-to-peer searching algorithm; for term project, developed multi-player networked version of Asteroids utilizing a self-designed, UDP, self-correcting protocol}
+\cvline{Spring 2009}{\textbf{Parallel and Distributed Systems:} Wrote parallel applications using many parallel or distributed APIs including Pthreads, MPI, Cilk, and OpenMP}
+\cvline{Spring 2009}{\textbf{Advanced Programming Systems:} Modified GCC codebase to implement compiler optimizations in Ruby including data flow analysis and global value numbering}
+\cvline{Fall 2008}{\textbf{Operating Systems:} Replaced the process scheduler in the Linux kernel with a custom make group weighted round robin algorithm; substited a counter based memory management algorithm in place of the default LRU}
 
-\affiliation
-{Assistant Unix System Administrator}
-{Tufts University}
-{July 2008-August 2008}
-{Medford, MA}
-
-\begin{compactitem}
-	\item Installed and maintained Unix servers and desktops for use by multiple departments on campus. \par
-	\item Wrote documentation on installation and use of several applications including Erlang, Linux, VMware, and GNUpg. \par
-\end{compactitem}
-
-\section{Education}
-
-\affiliation{University of Rochester}
-            {Hajim School of Engineering and Applied Sciences}
-            {Rochester, NY}
-            {May 2010}
-
-\begin{compactitem}
-	\item Bachelor of Science in Computer Science \par
-	\item Bachelor of Science in Mathematics \par
-\end{compactitem}
-
-\section{Computer Science Courses and Projects}
-\vspace{\secskip}
-
-\begin{compactitem}
-	\item \textbf{Computer Networking:} \textit{(Fall 2009)} Wrote implementations of several networking protocols, including basic HTTP proxy server, distance vector routing protocol, and Gnutella-like peer-to-peer searching algorithm. For term project, developed multi-player networked version of Asteroids. \par
-	
-	\item \textbf{Parallel and Distributed Systems:} \textit{(Spring 2009)} Wrote parallel applications using several parallel or distributed API's including Pthreads, MPI, Cilk, and OpenMP. \par
-
-	\item \textbf{Advanced Programming Systems:} \textit{(Spring 2009)} Group modified the GNU Compiler Collection to implement own compiler optimizations as part of competition with other groups in class. \par
-
-	\item \textbf{Undergraduate Problem Seminar:} \textit{(Spring 2009)} Discussed several open-ended problems and wrote academic papers summarizing findings. \par
-	
-	\item \textbf{Operating Systems:} \textit{(Fall 2008)} Modified Linux kernel (version 2.6) to implement algorithms for several tasks, including process scheduling and virtual memory management. \par
-	
-	\item \textbf{Artificial Intelligence Research: Quagents:} \textit{(Spring 2007)} Modified Quake 3 game engine for students in the department's Artificial Intelligence class to use for the visualization of agents they develop. \par
-\end{compactitem}
+\section{Skills}
+\cvline{Languages}{Ruby, Python, C, \cpp, Perl, Javascript, Java, Unix Shell Scripting, \LaTeX}
+\cvline{Frameworks/APIs}{Standard Template Library, Boost, Ruby on Rails, Pthreads}
+\cvline{Software}{Microsoft Visual Studio, Vim, Git, Perforce, Subversion}
+\cvline{Operating Systems}{Linux (Red Hat, Ubuntu, Gentoo), Unix, Windows (Desktop and Server), OpenVMS}
 
 \end{document}

@@ -1,4 +1,8 @@
-resume.pdf : resume.tex resume.cls
+install : resume.pdf
+	cp resume.pdf ~/wil.bz/resume.pdf
+
+resume.pdf : resume.tex
+	pdflatex $<
 	pdflatex $<
 
 clean :
