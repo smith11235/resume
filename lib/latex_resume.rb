@@ -1,3 +1,8 @@
-root = File.expand_path( "../latex_resume", __FILE__ )
+module LatexResume
+	require 'colorize'
 
-require File.join( root, 'railtie' )
+
+	root = File.expand_path( "../latex_resume", __FILE__ )
+
+	require File.join( root, 'railtie' )
+end

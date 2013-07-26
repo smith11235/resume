@@ -10,8 +10,8 @@ ruby 1.9.*
 
 plans
 =====
+- install latex, and precheck task for verification
 - package tasks into a gem
-  - with a railtie.rb and tasks.rake file
 	Makefile:
 		- accomplish logic through tasks
 
