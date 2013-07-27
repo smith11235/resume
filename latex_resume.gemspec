@@ -2,6 +2,10 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
  
+=begin
+http://yehudakatz.com/2010/04/02/using-gemspecs-as-intended/
+=end
+
 Gem::Specification.new do |s|
   s.name        = "latex_resume"
   s.version     = "0.0.1.draft"

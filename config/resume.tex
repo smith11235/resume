@@ -1,1 +1,35 @@
-hello world
+\documentclass[10pt,letterpaper]{moderncv}
+\moderncvtheme[blue,roman]{classic}
+\firstname{Michael}
+\familyname{Smith}
+\address{71 Strawberry Hill Ave Apt 811}{Stamford, CT  06902}
+\mobile{(401) 742-0185}
+\email{smith11235@gmail.com}
+
+\def\cpp{
+C\raise.40ex\hbox{\tiny{++}}
+\spacefactor1000 }
+
+\begin{document}
+\maketitle
+
+\section{Experience}
+\cventry{2009-2013}{Software Engineer}
+        {Factset Research Systems, Inc.}{Norwalk, CT}{}
+        {Developed cross-platform systems in various languages including Ruby, \cpp, and Perl for processing raw fundamentals financial data and performing common calculations in order to optimize fetch speed; Maintained client-facing update systems that constantly ran in multiple instances all day, every day}
+
+\cventry{2009-2010}{Research Assistant}
+        {University of Rochester}{Rochester, NY}{}
+        {Studied the merits of applying transactional database theory to shared memory in a parallel application; Implemented in \cpp a parallel discrete event simulator utilizing the experimental Rochester Software Transactional Memory system}
+
+\section{Education and Courses}
+\cventry{2005-2009}{Bachelors of Science in Computer Science}
+        {University of Connecticut}{Storrs, CT}{}{}
+
+\section{Skills}
+\cvline{Languages}{Ruby, Python, C, \cpp, Perl, Javascript, Java, Unix Shell Scripting, \LaTeX}
+\cvline{Frameworks/APIs}{Standard Template Library, Boost, Ruby on Rails, Pthreads}
+\cvline{Software}{Microsoft Visual Studio, Vim, Git, Perforce, Subversion}
+\cvline{Operating Systems}{Linux (Red Hat, Ubuntu, Gentoo), Unix, Windows (Desktop and Server), OpenVMS}
+
+\end{document}
