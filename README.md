@@ -11,14 +11,21 @@ ruby 1.9.*
 plans
 =====
 - install latex, and precheck task for verification
-- package tasks into a gem
+
 	Makefile:
-		- accomplish logic through tasks
+		- accomplish logic through tasks: tasks.rake
 
 - view:
-  - rails g controller latex_resume index generate source
-	- two buttons: generate and source
-		- run method, copy file to public/tmp/<source name> and reroute to file
+	index:
+		- source: reroute to config/resume.tex
+		- generate: run config/resume.tex and reroute to output in public/...
+	source:
+		- cp @latex_file, public/tmp/src/File.basename(@latex_file)
+		- reroute to public file
+	generate:
+		- run latex command for @latex_file 
+		- put output in public/tmp/gen/File.basename(@latex_file)
+		- reroute to public file
 
 - config/resume.tex
 
