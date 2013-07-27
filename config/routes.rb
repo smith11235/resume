@@ -1,4 +1,7 @@
 Resume::Application.routes.draw do
+  get "latex_resume/index"
+  get "latex_resume/source"
+  get "latex_resume/generate"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
