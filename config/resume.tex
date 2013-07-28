@@ -1,42 +1,112 @@
-\documentclass[10pt,letterpaper]{moderncv}
-\moderncvtheme[black,roman]{classic}
-\firstname{Michael}
-\familyname{Smith}
-\address{71 Strawberry Hill Ave Apt 811}{Stamford, CT  06902}
-\mobile{(401) 742-0185}
-\email{smith11235@gmail.com}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\cpp{
-C\raise.40ex\hbox{\tiny{++}}
-\spacefactor1000 }
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Michael Smith} % Your name
+\address{71 Strawberry Hill Ave\\ Stamford, CT 06902} % Your address
+\address{(401)~$\cdot$~742~$\cdot$~0185 \\ smith11235@gmail.com} % Your phone number and email
 
 \begin{document}
-\maketitle
 
-\section{Factset Research Systems, Inc.}
-\cventry{2009-2013}{Maintain Always On Batch Processing Systems}
-				{Dozens of databases, multiple operating systems, multiple db types, hundreds of jobs}{}
-				{Ensure data between clusters is in alignment and updates are running in a stable and timely manner.  Respond to, diagnose, and hotfix system events.}
-				
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
+\begin{rSection}{Education}
 
-\section{Experience}
-\cventry{2009-2013}{Software Engineer}
-        {Factset Research Systems, Inc.}{Norwalk, CT}{}
-        {Developed cross-platform systems in various languages including Ruby, \cpp, and Perl for processing raw fundamentals financial data and performing common calculations in order to optimize fetch speed; Maintained client-facing update systems that constantly ran in multiple instances all day, every day}
+{\bf University of California, Berkeley} \hfill {\em June 2004} \\ 
+B.S. in Computer Science \& Engineering \\
+Minor in Linguistics \smallskip \\
+Member of Eta Kappa Nu \\
+Member of Upsilon Pi Epsilon \\
+Overall GPA: 5.678
 
-\cventry{2009-2010}{Research Assistant}
-        {University of Rochester}{Rochester, NY}{}
-        {Studied the merits of applying transactional database theory to shared memory in a parallel application; Implemented in \cpp a parallel discrete event simulator utilizing the experimental Rochester Software Transactional Memory system}
+\end{rSection}
 
-\section{Education and Courses}
-\cventry{2005-2009}{Bachelors of Science in Computer Science}
-        {University of Connecticut}{Storrs, CT}{}{}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
-\section{Skills}
-\cvline{Languages}{Ruby, Python, C, \cpp, Perl, Javascript, Java, Unix Shell Scripting, \LaTeX}
-\cvline{Frameworks/APIs}{Standard Template Library, Boost, Ruby on Rails, Pthreads}
-\cvline{Software}{Microsoft Visual Studio, Vim, Git, Perforce, Subversion}
-\cvline{Operating Systems}{Linux (Red Hat, Ubuntu, Gentoo), Unix, Windows (Desktop and Server), OpenVMS}
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{ACME, Inc}{October 2010 - Present}{Web Developer}{Palo Alto, CA}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
+\item Donec et mollis dolor. Praesent et diam eget libero Adobe Coldfusion egestas mattis sit amet vitae augue.
+\item Nam tincidunt congue enim, ut porta lorem Microsoft SQL lacinia consectetur.
+\item Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+\item Pellentesque auctor nisi id magna consequat JavaScript sagittis.
+\item Aliquam at massa ipsum. Quisque bash bibendum purus convallis nulla ultrices ultricies.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{AJAX Hosting}{December 2009 - October 2010}{Lead Developer}{Austin, TX}
+\item Aenean ut gravida lorem. Ut turpis felis, Perl pulvinar a semper sed, adipiscing id dolor.
+\item Curabitur dapibus enim sit amet elit pharetra tincidunt website feugiat nisl imperdiet. Ut convallis AJAX libero in urna ultrices accumsan.
+\item Cum sociis natoque penatibus et magnis dis MySQL parturient montes, nascetur ridiculus mus.
+\item In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+\item Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{TinySoft}{January 2008 - April 2010}{Web Designer \& Developer}{Gainesville, GA}
+\item Vivamus PostgreSQL fermentum semper porta. Nunc diam velit PHP, adipiscing ut tristique vitae
+\item Maecenas convallis ullamcorper ultricies stylesheets.
+\item Quisque mi metus, unit tests CSS ornare sit amet fermentum et, tincidunt et orci.
+\item Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
+Protocols \& APIs & XML, JSON, SOAP, REST \\
+Databases & MySQL, PostgreSQL, Microsoft SQL \\
+Tools & SVN, Vim, Emacs
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
 
 \end{document}
+

@@ -21,6 +21,8 @@ class LatexResumeController < ApplicationController
 		root_dir = 'public/tmp/pdf'
 		command = "pdflatex -output-dir=public/tmp/pdf #{@@source_tex_file}"
 		output_file = File.join( root_dir, File.basename( @@source_tex_file, ".*" ) + ".pdf" )
+
+		raise "Error running: #{command}" unless system( command )
 		raise "Missing output file: #{output_file}" unless File.file? output_file
 
 		# dont need the 'public' in the redirect path
